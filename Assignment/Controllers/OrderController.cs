@@ -4,12 +4,12 @@ namespace Assignment.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ProductController : Controller
+    public class OrderController : Controller
     {
         [HttpGet]
-        public string GetProduct()
+        public string GetOrder()
         {
-            return "Fuck you Allikahn";
+            return "Fuck you Alikhan";
         }
     }
 }

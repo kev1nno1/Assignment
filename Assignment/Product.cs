@@ -2,9 +2,11 @@
 {
     public class Product
     {
-        public int OrderID { get; set; }
-
-        public int Quantity { get; set; }
+        public Product(ProductType productType, float requiredBinWidth)
+        {
+            ProductType = productType;
+            RequiredBinWidth = requiredBinWidth;
+        }
         public ProductType ProductType { get; set; }
         public float RequiredBinWidth { get; set; }
     }
