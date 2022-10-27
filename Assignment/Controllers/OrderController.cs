@@ -11,28 +11,6 @@ namespace Assignment.Controllers
     [Route("[controller]")]
     public class OrderController : Controller
     {
-        //[HttpGet]
-        //public string GetOrder()
-        //{
-        //    var settings = MongoClientSettings.FromConnectionString("mongodb+srv://api1:123@cluster0.nkkjht1.mongodb.net/?retryWrites=true&w=majority");
-        //    settings.ServerApi = new ServerApi(ServerApiVersion.V1);
-        //    var client = new MongoClient(settings); var database = client.GetDatabase("OrderDB",default);
-
-        //    var order = database.GetCollection<BsonDocument>("Order");
-        //    var order2 = order.Find(new BsonDocument()).ToList();
-        //    var x = "";
-        //    foreach (BsonDocument doc in order2)
-        //    {
-        //        x = doc.ToString();
-        //    }
-
-
-        //    return $"{x}";
-        //}
-
-        // add POST for po
-       
-
         [HttpGet("{orderId}")]
         public string GetOrder(string orderId)//add id parameter
         {

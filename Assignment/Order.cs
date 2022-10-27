@@ -47,13 +47,14 @@ namespace Assignment
             var info1 = "The Products for is order are:\n";
             foreach (var product in Products)
             {
-                info1 += product.Product + " | ";
+                info1 += product.Quantity + " "+ product.Product + " | ";
             }
 
             info1 += "\nOrder ID is: ";
             info1 += OrderID + "\n";
             info1 += "Binwidth required: ";
             info1 += TotalBinWidth;
+            info1 += " mm";
             return info1;
 
         }
