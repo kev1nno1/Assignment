@@ -35,7 +35,7 @@ namespace Assignment.Controllers
                 var json = JsonSerializer.Serialize(orderobject);
                 var doc = BsonSerializer.Deserialize<BsonDocument>(json);
                 order.InsertOne(doc);
-                return $"The total bin width required for this order is: {orderobject.CalculateTotalWidth().ToString()}";
+                return $"The total bin width required for this order is: {orderobject.CalculateTotalWidth().ToString()} mm";
 
 
             }
