@@ -1,0 +1,14 @@
+{
+    "OrderID": "123456",
+    "ProductOrder": [
+      {
+        "ProductType": "mug",
+        "Quantity": 2
+      },
+      {
+        "ProductType": "canvas",
+        "Quantity": 2
+      }
+    ]
+  
+}
